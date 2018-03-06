@@ -11,9 +11,7 @@ window.onload = onClientLoad;
 
 // Load and inialize the API, then run the onYouTubeApiLoad() function once this is done
 function onClientLoad() {
-    console.log("onClientLoad");
     gapi.client.load('youtube', 'v3', onYouTubeApiLoad)
-    console.log("after onClientLoad");
 }
 
     // Attach your key to the API
@@ -29,7 +27,6 @@ function onYouTubeApiLoad() {
     // 8. Click the "Public data" radio button
     // 9. Click the "What credentials do I need?" button
     // 10. Copy your API key and paste it in below
-    console.log("before API KEY")
     gapi.client.setApiKey('AIzaSyDjtFukI0pv7QB2lyz98HbRIeDJK7OeRHI');
 
     // Attach an event listener to the form so that a search is carried out

@@ -4,9 +4,12 @@
   "description": "test youtube api",
   "main": "youtube.js",
   "scripts": {
-    "start": "npm youtube.js",
+    "start": "./node_modules/http-server/bin/http-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aaron Ofengender",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
 }
